@@ -1,15 +1,5 @@
 import { FileNode } from 'src/types/fileNode';
-
-const getRandomDateBetween = (start: Date, end: Date) => {
-  const diff = end.getTime() - start.getTime();
-  return new Date(start.getTime() + Math.random() * diff);
-};
-
-const getRandomDate = () => {
-  const start = new Date(2020, 0, 1);
-  const end = new Date();
-  return getRandomDateBetween(start, end);
-};
+import { getRandomDate } from 'src/util/date';
 
 const files: FileNode = {
   type: 'folder',

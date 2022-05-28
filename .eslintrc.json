@@ -1,7 +1,8 @@
 {
   "env": {
     "browser": true,
-    "es2021": true
+    "es2021": true,
+    "jest": true
   },
   "extends": [
     "prettier",
@@ -16,5 +17,12 @@
     "sourceType": "module",
     "project": "./tsconfig.json"
   },
-  "plugins": ["@typescript-eslint"]
+  "plugins": ["@typescript-eslint"],
+  "overrides": [
+    {
+      "files": ["*.{test|spec}.*"],
+      "plugins": ["jest"],
+      "extends": ["plugin:jest/recommended", "plugin:jest/style"]
+    }
+  ]
 }
