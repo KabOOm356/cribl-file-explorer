@@ -2,7 +2,6 @@
   "name": "cribl-file-explorer-ui",
   "version": "0.0.0",
   "description": "The file explorer UI for Cribl's take home assessment",
-  "main": "index.js",
   "author": "Robert Wagner <robertwagner2056@gmail.com>",
   "license": "UNLICENSED",
   "private": true,
