@@ -7,8 +7,11 @@
   "license": "UNLICENSED",
   "private": true,
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.26.0",
+    "@typescript-eslint/parser": "^5.26.0",
     "@webpack-cli/generators": "^2.4.2",
     "css-loader": "^6.7.1",
+    "eslint": "^8.16.0",
     "html-webpack-plugin": "^5.5.0",
     "prettier": "^2.6.2",
     "style-loader": "^3.3.1",
@@ -24,6 +27,7 @@
     "build:prod": "webpack --mode=production --node-env=production",
     "watch": "webpack --watch",
     "serve": "webpack serve",
-    "tsc": "tsc --noEmit"
+    "tsc": "tsc --noEmit",
+    "lint": "eslint \"src/**/*.{js,ts}\""
   }
 }
