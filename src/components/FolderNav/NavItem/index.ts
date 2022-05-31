@@ -23,16 +23,21 @@ const NavItem = (node: FileNode) => {
 
   if (node.children.length) {
     const expand = NavItemExpand();
+    const children = NavItemChildren(node);
+
     expand.addEventListener('click', (e) => {
       e.preventDefault();
       e.stopPropagation();
-      root.classList.toggle('open');
+      expand.classList.toggle('open');
+      children.classList.toggle('open');
     });
 
-    const children = NavItemChildren(node);
+    const row = document.createElement('div');
+    row.classList.add(styles.row);
+    row.appendChild(expand);
+    row.appendChild(name);
 
-    root.appendChild(expand);
-    root.appendChild(name);
+    root.appendChild(row);
     root.appendChild(children);
   } else {
     root.appendChild(name);

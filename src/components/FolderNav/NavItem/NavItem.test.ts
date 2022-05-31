@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-non-null-assertion */
 import { Folder, File } from '@src/types/fileNode';
 import {
   getByLabelText,
@@ -87,8 +88,11 @@ describe('NavItem', () => {
     const el = NavItem(node);
 
     await userEvent.click(getByLabelText(el!, 'Expand folder'));
-    // Since jest isn't playing well with less, we have to check for the open class instead of the children to be visible
-    await waitFor(() => expect(el).toHaveClass('open'));
+    // Since jest isn't playing well with less, we have to check for the open class instead of if the children are visible
+    await waitFor(() =>
+      expect(getByTestId(el!, 'nav-item-expand')).toHaveClass('open')
+    );
+    expect(getByTestId(el!, 'nav-item-children')).toHaveClass('open');
   });
 
   it('should dispatch an event when the folder is clicked', async () => {
