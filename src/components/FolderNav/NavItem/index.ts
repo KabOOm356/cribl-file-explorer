@@ -1,4 +1,4 @@
-import { FileNode } from 'src/types/fileNode';
+import { FileNode } from '@src/types/fileNode';
 import NavItemName from './NavItemName';
 import NavItemExpand from './NavItemExpand';
 import styles from './styles.less';

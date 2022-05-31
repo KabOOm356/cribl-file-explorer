@@ -1,5 +1,5 @@
-import { FileNode } from 'src/types/fileNode';
-import { getRandomDate } from 'src/util/date';
+import { FileNode } from '@src/types/fileNode';
+import { getRandomDate } from '@src/util/date';
 
 const files: FileNode = {
   type: 'folder',

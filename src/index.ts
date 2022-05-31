@@ -1,6 +1,6 @@
-import files from 'src/data/files';
+import files from '@src/data/files';
 import styles from './styles.less';
-import FolderNav from 'src/components/FolderNav';
+import FolderNav from '@src/components/FolderNav';
 
 import './global.less';
 

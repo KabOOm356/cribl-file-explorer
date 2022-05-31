@@ -1,6 +1,6 @@
-import { Folder } from 'src/types/fileNode';
-import { isPresent } from 'src/util/predicate';
-import NavItem from 'src/components/FolderNav/NavItem';
+import { Folder } from '@src/types/fileNode';
+import { isPresent } from '@src/util/predicate';
+import NavItem from '@src/components/FolderNav/NavItem';
 import styles from './styles.less';
 
 const NavItemChildren = (folder: Folder) => {

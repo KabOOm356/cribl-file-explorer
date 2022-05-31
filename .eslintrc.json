@@ -21,8 +21,12 @@
   "overrides": [
     {
       "files": ["*.{test|spec}.*"],
-      "plugins": ["jest"],
-      "extends": ["plugin:jest/recommended", "plugin:jest/style"]
+      "plugins": ["jest", "testing-library"],
+      "extends": [
+        "plugin:jest/recommended",
+        "plugin:jest/style",
+        "plugin:testing-library/dom"
+      ]
     }
   ]
 }

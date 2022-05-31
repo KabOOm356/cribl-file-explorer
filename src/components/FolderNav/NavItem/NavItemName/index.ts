@@ -1,4 +1,4 @@
-import { FileNode } from 'src/types/fileNode';
+import { FileNode } from '@src/types/fileNode';
 import styles from './styles.less';
 
 const NavItemName = (node: FileNode) => {
