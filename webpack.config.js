@@ -32,8 +32,15 @@ const config = {
         exclude: ['/node_modules/'],
       },
       {
-        test: /\.css$/i,
-        use: [stylesHandler, 'css-loader'],
+        test: /\.(css|less)$/i,
+        use: [
+          stylesHandler,
+          {
+            loader: 'css-loader',
+            options: { importLoaders: 1, modules: true },
+          },
+          'less-loader',
+        ],
       },
       {
         test: /\.(eot|svg|ttf|woff|woff2|png|jpg|gif)$/i,

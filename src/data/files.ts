@@ -17,6 +17,12 @@ const files: FileNode = {
           modified: getRandomDate(),
           children: [],
         },
+        {
+          type: 'folder',
+          name: 'School',
+          modified: getRandomDate(),
+          children: [],
+        },
       ],
     },
     {
