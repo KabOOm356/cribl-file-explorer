@@ -1,15 +1,19 @@
-# 🚀 Welcome to your new awesome project!
+# Cribl File Explorer
 
-This project has been created using **webpack-cli**, you can now run
+## Setup
+* Intall node 16
+  * If you're using `nvm` just run `nvm install && nvm use`
+* (Optional) Install [yarn classic](https://classic.yarnpkg.com/lang/en/)
+  * If you don't use yarn just replace "yarn" with "npm" in the following scripts
+* Install dependencies by running `yarn install`
 
-```
-npm run build
-```
+## Running Locally
+* Run `yarn run serve`
 
-or
-
-```
-yarn build
-```
-
-to bundle your application
+### Additional Scripts
+* `yarn run tsc`
+  * Runs the typescript compiler to do static type checking
+* `yarn run lint`
+  * Runs eslint to check for common errors and enforce styling rules
+* `yarn run test`
+  * Launches jest to run unit and integration tests  
