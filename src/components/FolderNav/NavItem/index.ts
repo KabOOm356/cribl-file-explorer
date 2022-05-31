@@ -21,7 +21,8 @@ const NavItem = (node: FileNode) => {
     document.dispatchEvent(event);
   });
 
-  if (node.children.length) {
+  const subfolders = node.children.filter((child) => child.type === 'folder');
+  if (subfolders.length) {
     const expand = NavItemExpand();
     const children = NavItemChildren(node);
 
