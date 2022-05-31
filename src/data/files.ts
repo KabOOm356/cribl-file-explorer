@@ -15,13 +15,27 @@ const files: FileNode = {
           type: 'folder',
           name: 'Work',
           modified: getRandomDate(),
-          children: [],
+          children: [
+            {
+              type: 'file',
+              name: 'Resume.pdf',
+              modified: getRandomDate(),
+              size: 500,
+            },
+          ],
         },
         {
           type: 'folder',
           name: 'School',
           modified: getRandomDate(),
-          children: [],
+          children: [
+            {
+              type: 'file',
+              name: 'Homework.doc',
+              modified: getRandomDate(),
+              size: 10,
+            },
+          ],
         },
       ],
     },
@@ -29,25 +43,51 @@ const files: FileNode = {
       type: 'folder',
       name: 'Images',
       modified: getRandomDate(),
-      children: [],
+      children: [
+        {
+          type: 'file',
+          name: 'Photo.jpg',
+          modified: getRandomDate(),
+          size: 100,
+        },
+        {
+          type: 'file',
+          name: 'Vacation.jpg',
+          modified: getRandomDate(),
+          size: 250,
+        },
+      ],
     },
     {
       type: 'folder',
       name: 'System',
       modified: getRandomDate(),
-      children: [],
+      children: [
+        {
+          type: 'file',
+          name: 'Settings.ini',
+          modified: getRandomDate(),
+          size: 10,
+        },
+        {
+          type: 'file',
+          name: 'Startup.bat',
+          modified: getRandomDate(),
+          size: 10,
+        },
+      ],
     },
     {
       type: 'file',
       name: 'Description.rtf',
       modified: getRandomDate(),
-      size: 1000,
+      size: 1,
     },
     {
       type: 'file',
       name: 'Description.txt',
       modified: getRandomDate(),
-      size: 2000,
+      size: 2,
     },
   ],
 };

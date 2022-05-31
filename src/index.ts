@@ -1,6 +1,7 @@
 import files from '@src/data/files';
 import styles from './styles.less';
 import FolderNav from '@src/components/FolderNav';
+import FolderExplorer from '@src/components/FolderExplorer';
 
 import './global.less';
 
@@ -11,9 +12,7 @@ const nav = FolderNav(files);
 if (nav) {
   el.appendChild(nav);
 }
-
-document.addEventListener('openFolder', function (e) {
-  console.log('openFolder', e);
-});
+const explorer = FolderExplorer(files);
+el.appendChild(explorer);
 
 document.body.replaceChildren(el);
